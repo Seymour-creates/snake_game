@@ -46,12 +46,40 @@ cmake_ninja_workdir = /Users/romelogilbert/CLionProjects/starterProjects/freetim
 
 build cmake_object_order_depends_target_snake_game: phony || CMakeFiles/snake_game.dir
 
-build CMakeFiles/snake_game.dir/main.cpp.o: CXX_COMPILER__snake_game_Debug /Users/romelogilbert/CLionProjects/starterProjects/freetime/snake_game/main.cpp || cmake_object_order_depends_target_snake_game
-  DEP_FILE = CMakeFiles/snake_game.dir/main.cpp.o.d
+build CMakeFiles/snake_game.dir/src/main.cpp.o: CXX_COMPILER__snake_game_Debug /Users/romelogilbert/CLionProjects/starterProjects/freetime/snake_game/src/main.cpp || cmake_object_order_depends_target_snake_game
+  DEP_FILE = CMakeFiles/snake_game.dir/src/main.cpp.o.d
   FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -fcolor-diagnostics -std=gnu++17
   INCLUDES = -isystem /usr/local/include
   OBJECT_DIR = CMakeFiles/snake_game.dir
-  OBJECT_FILE_DIR = CMakeFiles/snake_game.dir
+  OBJECT_FILE_DIR = CMakeFiles/snake_game.dir/src
+
+build CMakeFiles/snake_game.dir/src/StateMan.cpp.o: CXX_COMPILER__snake_game_Debug /Users/romelogilbert/CLionProjects/starterProjects/freetime/snake_game/src/StateMan.cpp || cmake_object_order_depends_target_snake_game
+  DEP_FILE = CMakeFiles/snake_game.dir/src/StateMan.cpp.o.d
+  FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -fcolor-diagnostics -std=gnu++17
+  INCLUDES = -isystem /usr/local/include
+  OBJECT_DIR = CMakeFiles/snake_game.dir
+  OBJECT_FILE_DIR = CMakeFiles/snake_game.dir/src
+
+build CMakeFiles/snake_game.dir/src/assetMan.cpp.o: CXX_COMPILER__snake_game_Debug /Users/romelogilbert/CLionProjects/starterProjects/freetime/snake_game/src/assetMan.cpp || cmake_object_order_depends_target_snake_game
+  DEP_FILE = CMakeFiles/snake_game.dir/src/assetMan.cpp.o.d
+  FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -fcolor-diagnostics -std=gnu++17
+  INCLUDES = -isystem /usr/local/include
+  OBJECT_DIR = CMakeFiles/snake_game.dir
+  OBJECT_FILE_DIR = CMakeFiles/snake_game.dir/src
+
+build CMakeFiles/snake_game.dir/src/game.cpp.o: CXX_COMPILER__snake_game_Debug /Users/romelogilbert/CLionProjects/starterProjects/freetime/snake_game/src/game.cpp || cmake_object_order_depends_target_snake_game
+  DEP_FILE = CMakeFiles/snake_game.dir/src/game.cpp.o.d
+  FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -fcolor-diagnostics -std=gnu++17
+  INCLUDES = -isystem /usr/local/include
+  OBJECT_DIR = CMakeFiles/snake_game.dir
+  OBJECT_FILE_DIR = CMakeFiles/snake_game.dir/src
+
+build CMakeFiles/snake_game.dir/src/mainMenu.cpp.o: CXX_COMPILER__snake_game_Debug /Users/romelogilbert/CLionProjects/starterProjects/freetime/snake_game/src/mainMenu.cpp || cmake_object_order_depends_target_snake_game
+  DEP_FILE = CMakeFiles/snake_game.dir/src/mainMenu.cpp.o.d
+  FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -fcolor-diagnostics -std=gnu++17
+  INCLUDES = -isystem /usr/local/include
+  OBJECT_DIR = CMakeFiles/snake_game.dir
+  OBJECT_FILE_DIR = CMakeFiles/snake_game.dir/src
 
 
 # =============================================================================
@@ -61,7 +89,7 @@ build CMakeFiles/snake_game.dir/main.cpp.o: CXX_COMPILER__snake_game_Debug /User
 #############################################
 # Link the executable snake_game
 
-build snake_game: CXX_EXECUTABLE_LINKER__snake_game_Debug CMakeFiles/snake_game.dir/main.cpp.o | /usr/local/lib/libsfml-graphics.2.5.1.dylib /usr/local/lib/libsfml-audio.2.5.1.dylib /usr/local/lib/libsfml-window.2.5.1.dylib /usr/local/lib/libsfml-system.2.5.1.dylib
+build snake_game: CXX_EXECUTABLE_LINKER__snake_game_Debug CMakeFiles/snake_game.dir/src/main.cpp.o CMakeFiles/snake_game.dir/src/StateMan.cpp.o CMakeFiles/snake_game.dir/src/assetMan.cpp.o CMakeFiles/snake_game.dir/src/game.cpp.o CMakeFiles/snake_game.dir/src/mainMenu.cpp.o | /usr/local/lib/libsfml-graphics.2.5.1.dylib /usr/local/lib/libsfml-audio.2.5.1.dylib /usr/local/lib/libsfml-window.2.5.1.dylib /usr/local/lib/libsfml-system.2.5.1.dylib
   FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk
   LINK_LIBRARIES = -Wl,-rpath,/usr/local/lib  /usr/local/lib/libsfml-graphics.2.5.1.dylib  /usr/local/lib/libsfml-audio.2.5.1.dylib  /usr/local/lib/libsfml-window.2.5.1.dylib  /usr/local/lib/libsfml-system.2.5.1.dylib
   OBJECT_DIR = CMakeFiles/snake_game.dir
